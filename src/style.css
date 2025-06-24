@@ -24,18 +24,19 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  padding-top: 70px; /* Header yüksekliği */
   min-width: 320px;
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 #app {
+  flex: 1 0 auto;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -43,7 +44,7 @@ h1 {
 }
 
 .logo {
-  height: 6em;
+  /* height: 6em; */
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
@@ -93,4 +94,8 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.site-footer {
+  margin-top: auto;
 }
